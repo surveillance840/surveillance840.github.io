@@ -1,43 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Surveillance Loader</title>
-<style>
-  body {
-    margin: 0;
-    font-family: monospace;
-    background: #000;
-    color: #fff;
-    text-align: center;
-  }
-  .game img {
-    width: 150px;
-    display: block;
-    margin: 20px auto 10px;
-  }
-  a {
-    color: #0ff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="utf‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surveillance Loader</title>
+  <link rel="icon" type="image/png" href="https://surveillance840.neocities.org/Logo1.png">
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --bg-darker: #0f0f0f;
+      --text-light: #e0e0e0;
+      --text-muted: #888;
+      --accent: #1e3acc;
+      --link: #00c4c4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      font-family: monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    header {
+      width: 100%;
+      background: var(--bg-darker);
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin-top: 60px;
+      text-align: center;
+    }
+    .game {
+      margin: 0 auto 40px;
+    }
+    .game img {
+      width: 100%;
+      max-width: 240px;
+      display: block;
+      margin: 0 auto 12px;
+      filter: brightness(1.1);
+      border: 1px solid #333;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .placeholder-link {
+      margin-top: 20px;
+      display: inline-block;
+      font-size: 16px;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Surveillance</h1>
+  <header>
+    <h1>Surveillance</h1>
+  </header>
 
-<div class="game">
-  <a href="#">
-    <img src="https://surveillance840.neocities.org/1.png" alt="Logo">
-    S.pmp
-  </a>
-</div>
+  <div class="container">
 
-<p><a href="#">Placeholder</a></p>
+    <div class="game">
+      <a href="#">
+        <img src="https://surveillance840.neocities.org/1.png" alt="Logo">
+        <div>S.pmp</div>
+      </a>
+    </div>
+
+    <p>This website serves as an archive of the filedump user known as "Surveillance840". Despite appearing to have no active owner, the account continues to receive frequent updates.</p>
+
+    <a href="#" class="placeholder-link">Placeholder</a>
+
+  </div>
 
 </body>
 </html>
