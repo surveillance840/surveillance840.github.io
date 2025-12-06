@@ -5,170 +5,171 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Surveillance Loader</title>
 <link rel="icon" type="image/png" href="https://surveillance840.neocities.org/Logo1.png">
+
 <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
   body {
+    margin: 0;
     font-family: monospace;
-    color: white;
-    background: linear-gradient(180deg, #111111 0%, #333333 50%, #000000 100%);
+    background: #0e0e0e;
+    color: #e5e5e5;
   }
 
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #000;
-    border: 1px solid #222;
-    padding: 30px 40px;
-    text-align: center;
-    max-width: 600px;
-  }
-
-  h1 {
-    font-weight: normal;
-    font-size: 26px;
-    margin-bottom: 15px;
-    color: #d0d0d0;
-    letter-spacing: 1px;
+  /* top bar */
+  header {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 15px 25px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
   }
 
-  .discord-link {
-    color: #1e3acc;
+  header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  header a {
+    color: #5e7cff;
     text-decoration: none;
     font-size: 14px;
   }
+  header a:hover { text-decoration: underline; }
 
-  .discord-link:hover {
-    text-decoration: underline;
+  /* main container */
+  .wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 25px;
+    text-align: center;
   }
 
-  p {
-    color: #bcbcbc;
-    font-size: 13px;
-    line-height: 1.5em;
-    margin-bottom: 35px;
+  .description {
+    background: #141414;
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.6em;
+    margin-bottom: 40px;
+    color: #c6c6c6;
   }
 
-  hr {
-    border: none;
-    border-top: 1px solid #222;
-    margin: 25px auto;
-    width: 80%;
-  }
-
-  .gamerow {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: nowrap;
+  /* game cards */
+  .games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 18px;
+    margin-bottom: 40px;
   }
 
   .game {
-    background: #0c0c0c;
-    border: 1px solid #222;
-    padding: 8px;
-    width: 130px;
+    background: #161616;
+    padding: 12px;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    transition: 0.2s;
+  }
+
+  .game:hover {
+    transform: translateY(-4px);
+    border-color: #444;
+    box-shadow: 0 0 8px #000;
   }
 
   .game img {
     width: 100%;
-    height: auto;
-    border: 1px solid #333;
+    border-radius: 8px;
     margin-bottom: 8px;
+    border: 1px solid #333;
   }
 
-  .link {
-    color: #00ffff;
-    text-decoration: none;
-    font-size: 13px;
-  }
-
-  .link:hover {
-    text-decoration: underline;
-  }
-
-  .bottom-link {
-    color: #fff;
+  .game a {
+    color: #00d9d9;
     text-decoration: none;
     font-size: 14px;
-    display: inline-block;
-    margin-top: 10px;
+  }
+  .game a:hover { text-decoration: underline; }
+
+  /* footer links */
+  .links a {
+    display: block;
+    margin: 6px 0;
+    color: #dcdcdc;
+    font-size: 14px;
+    text-decoration: none;
   }
 
-  .bottom-link:hover {
+  .links a:hover {
     text-decoration: underline;
   }
 
   footer {
+    text-align: center;
+    padding: 20px;
     font-size: 11px;
-    color: #444;
-    margin-top: 20px;
+    color: #555;
   }
 </style>
 </head>
+
 <body>
 
-  <div class="content">
-    <h1>
-      Surveillance
-      <a href="https://discord.com/invite/cJbTBQRHuF" class="discord-link">Discord</a>
-    </h1>
+<header>
+  <h1>Surveillance</h1>
+  <a href="https://discord.com/invite/cJbTBQRHuF">Discord</a>
+</header>
 
-    <p>This website serves as an archive of the filedump user known as "Surveillance840". Despite appearing to have no active owner, the account continues to receive frequent updates.</p>
+<div class="wrapper">
 
-    <hr>
+  <div class="description">
+    This website serves as an archive of the filedump user known as "Surveillance840".
+    Despite appearing to have no active owner, the account continues to receive
+    frequent updates.
+  </div>
 
-    <div class="gamerow">
-      <div class="game">
-        <a href="https://surveillance840.neocities.org/surveillance1" class="link">
-          <img src="https://surveillance840.neocities.org/1.png" alt="Logo">
-          S.pmp
-        </a>
-      </div>
-
-      <div class="game">
-        <a href="https://surveillance840.neocities.org/surveillance2" class="link">
-          <img src="https://surveillance840.neocities.org/2.png" alt="Logo">
-          S2.pmp
-        </a>
-      </div>
-      
-      <div class="game">
-        <a href="https://surveillance840.neocities.org/oakleywood" class="link">
-          <img src="https://surveillance840.neocities.org/3.png" alt="Warning">
-          Notice.pmp
-        </a>
-      </div>
-
-      <div class="game">
-        <a href="https://watcher-sight.neocities.org/denomination" class="link">
-          <img src="https://surveillance840.neocities.org/4.png" alt="Logo">
-          Conflagration.pmp
-        </a>
-      </div>
+  <div class="games">
+    
+    <div class="game">
+      <a href="https://surveillance840.neocities.org/surveillance1">
+        <img src="https://surveillance840.neocities.org/1.png" alt="Logo">
+        S.pmp
+      </a>
     </div>
 
-    <hr>
+    <div class="game">
+      <a href="https://surveillance840.neocities.org/surveillance2">
+        <img src="https://surveillance840.neocities.org/2.png" alt="Logo">
+        S2.pmp
+      </a>
+    </div>
 
-    <a href="contact.txt" class="bottom-link">Contact</a>
-    <br>
-    <a href="https://pinesparadio.neocities.org" class="bottom-link">Mind</a>
-    <br>
-    <a href="https://watcher-sight.neocities.org" class="bottom-link">The things to see</a>
-    <br>
-    <a href="https://pinesparadio.neocities.org/system" class="bottom-link">System</a>
+    <div class="game">
+      <a href="https://surveillance840.neocities.org/oakleywood">
+        <img src="https://surveillance840.neocities.org/3.png" alt="Warning">
+        Notice.pmp
+      </a>
+    </div>
 
-    <footer></footer>
+    <div class="game">
+      <a href="https://watcher-sight.neocities.org/denomination">
+        <img src="https://surveillance840.neocities.org/4.png" alt="Logo">
+        Conflagration.pmp
+      </a>
+    </div>
+
   </div>
+
+  <div class="links">
+    <a href="contact.txt">Contact</a>
+    <a href="https://pinesparadio.neocities.org">Mind</a>
+    <a href="https://watcher-sight.neocities.org">The things to see</a>
+    <a href="https://pinesparadio.neocities.org/system">System</a>
+  </div>
+
+</div>
+
+<footer></footer>
 
 </body>
 </html>
