@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>The - Watcher - Sights</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #000;
+      color: #ddd;
+      font-family: "Times New Roman", serif;
+      overflow: hidden;
+    }
+    .center {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .row {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      justify-content: center;
+    }
+    a img {
+      display: block;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border: 3px solid #333;
+      background: #111;
+    }
+    #secretButton {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #222;
+      color: #ccc;
+      border: 1px solid #555;
+      padding: 4px 8px;
+      font-size: 12px;
+      cursor: pointer;
+      display: none;
+    }
+    #banner {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      font-size: 16px;
+      padding: 6px 0;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">Welcome to my place :-)</div>
+
+  <div class="center">
+    <div class="row">
+      <a href="https://youtu.be/aP0AbGwYtqA" target="_blank" rel="noopener noreferrer">
+        <img src="https://watcher-sight.neocities.org/thefirst.png" alt="Link 1">
+      </a>
+      <a href="https://www.youtube.com/watch?v=rST6d7lSaso" target="_blank" rel="noopener noreferrer">
+        <img src="https://watcher-sight.neocities.org/thesecond.png" alt="Link 2">
+      </a>
+      <a href="https://youtu.be/D5PuE_svF84" target="_blank" rel="noopener noreferrer">
+        <img src="https://watcher-sight.neocities.org/thethird.png" alt="Link 3">
+      </a>
+      <a href="https://www.youtube.com/watch?v=sbcn_88rnME&pp=0gcJCTwKAYcqIYzv" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif" alt="Link 4">
+      </a>
+    </div>
+  </div>
+
+  <button id="secretButton" onclick="window.location.href='https://watcher-sight.neocities.org/happyplace';">Enter my funny place : -  )</button>
+
+  <script>
+    if (Math.random() < 0.1) {
+      document.getElementById('secretButton').style.display = 'block';
+    }
+  </script>
+  <script>
+document.addEventListener('contextmenu', function(e){e.preventDefault();});
+document.addEventListener('keydown', function(e){
+if(e.key==="F12") e.preventDefault();
+if((e.ctrlKey && e.shiftKey && (e.key==="I"||e.key==="J"))||(e.ctrlKey&&e.key==="U")) e.preventDefault();
+if(e.ctrlKey && e.shiftKey && e.key==="C") e.preventDefault();
+});
+</script>
+
+</body>
+</html>
